@@ -1,0 +1,27 @@
+uses crt;
+var
+x : integer;
+sinus,consinus : real;
+begin
+clrscr;
+writeln('>>>>>>>>--Tugas Bab 3--<<<<<<<<');
+writeln('Nama     : Ayu Agustiasri Suparno');
+writeln('Fakultas : Teknologi Informasi');
+writeln('Prodi    : Teknik Informatika');
+writeln('Date     : Rabu, 2017/10/18');
+writeln(' ');
+writeln('==============================');
+writeln('   X   Sinus     Consinus');
+writeln('------------------------------');
+x:=0;
+while x <= 360 do
+begin
+sinus:=sin(x/57.2958);
+consinus:=cos(x/57.2958);
+writeln(x:5,sinus:10:2,consinus:10:2);
+x:=x+30;
+end;
+writeln('================================');
+    readln;
+    readkey;
+end.
