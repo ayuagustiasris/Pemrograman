@@ -1,0 +1,55 @@
+Program Penilaian ;
+uses crt;
+
+var
+  alpro,sbo,rti,bi,ps : integer;
+   mkalpro,mksbo,mkrti,mkbi,mkps: string;
+begin
+  clrscr;
+  writeln ('Program Penilaian');
+  writeln ('Ayu Agustiasri Suparno');
+  writeln('Teknik Informatika');
+  writeln('Date : Senin, 2017 10 09')
+  writeln ('=================');
+  writeln;
+  writeln ('Masukkan Nilai Alpro =  ');
+  readln (alpro);
+  writeln ('Masukkan Nilai Sbo =  ');
+  readln (sbo);
+  writeln ('Masukkan Nilai Rti =  ');
+  readln (rti);
+  writeln ('Masukkan Nilai Bahasa Indonesia =  ');
+  readln (bi);
+  writeln ('Masukkan Nilai Pancasila =  ');
+  readln (ps);
+
+  if (alpro > 50) and (sbo > 50) and (rti>50) and (bi>50) and (ps>50) then
+    begin
+    writeln ('tidak ada remedial')
+    end
+  else
+    begin
+      if alpro <= 50 then
+        begin
+        mkalpro := 'alpro'
+        end;
+      if sbo <= 50 then
+         begin
+        mksbo := 'sbo'
+        end;
+      if rti <= 50 then
+        begin
+        mkrti := 'rti'
+        end;
+      if bi <= 50 then
+        begin
+        mkbi := 'bi'
+        end;
+      if ps <= 50 then
+        begin
+        mkps := 'ps'
+        end;
+    write('remedial : '+mkalpro+' '+mksbo+' '+mkrti+' '+mkbi+' '+mkps);
+    end; 
+  readln;
+end.
