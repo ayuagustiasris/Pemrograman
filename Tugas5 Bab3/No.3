@@ -1,0 +1,34 @@
+Nama 	 :Ayu Agustiasri Suparno
+Fakultas :Teknologi & Informasi
+Prodi	 :Teknik Informatika
+Tugas	 :Pascal Tugas Bab 3
+Date     :Rabu, 2017/10/18
+
+
+program faktorial
+
+uses crt;
+var
+   i,n,f:integer;
+
+begin
+writeln('>>>>>>>>--Tugas Bab 3--<<<<<<<<');
+writeln('Nama     : Ayu Agustiasri Suparno');
+writeln('Fakultas : Teknologi Informasi');
+writeln('Prodi    : Teknik Informatika');
+writeln('Date     : Rabu, 2017/10/18');
+writeln('  ');
+writeln('==========+++F A K T O R I A L+++==========');
+writeln(' ');
+write('Masukan Nilai  =  ');readln(n);
+writeln();
+f:=1;
+for i := 1 to n do
+    begin
+         f:=f*i;
+     end;
+ writeln('Faktorial dari  :  ',n,' Adalah ',f);
+ writeln('');
+ writeln('============================================');
+ readkey;
+ end.
