@@ -1,0 +1,14 @@
+program PersegiPanjang;
+uses crt;
+var
+  p,l,t : integer;
+  hasil:integer;
+
+begin
+write('masukan p: '); readln(p);
+write('masukan l: '); readln(l);
+write('masukan t: '); readln(t);
+hasil:=p*l*t;
+writeln(p,'*',l,'*',t,'=',hasil);
+readkey;
+end.
