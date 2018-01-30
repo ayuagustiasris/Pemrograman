@@ -1,0 +1,36 @@
+uses crt;
+var
+	cekmember,cekdiskon :  boolean;
+	besardiskon,harganormal,hargaakhir : real;
+    a,b : string;
+
+begin
+writeln('>>>>>>>>--Tugas Latihan--<<<<<<<<');
+writeln('Nama     : Ayu Agustiasri Suparno');
+writeln('Fakultas : Teknologi Informasi');
+writeln('Prodi    : Teknik Informatika');
+writeln('Date     : Minggu, 2017/10/15');
+writeln('==========+++HITUNG HARGA+++==========');
+writeln(' ');
+write('Harga Normal Baju :Rp. ');readln(harganormal);
+write('Cek Diskon Y/T    : ');readln(a);
+cekdiskon:= a='Y';
+cekdiskon:= a='y';
+write('Cek Member Y/T    : ');readln(b);
+cekmember:= b='Y';
+cekmember:= b='y';
+ if(cekdiskon AND cekmember)then
+   besardiskon:=0.25*harganormal
+ else
+ if(cekdiskon AND NOT cekmember)then
+      besardiskon:=0.20*harganormal
+ else
+ if(NOT(cekdiskon) AND NOT (cekmember))then
+      besardiskon:=0.00*harganormal;
+      hargaakhir:=harganormal-besardiskon;
+      writeln(' ');
+      writeln('=============+++T O T A L+++===========');
+writeln('Harga Akhir     :Rp. ',hargaakhir:7:2);
+readln;
+readkey;
+end.
